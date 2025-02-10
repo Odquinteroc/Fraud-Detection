@@ -11,9 +11,8 @@ model_lr=pickle.load(open('logistic_r_model.pkl','rb'))
 
 
 #load the dataset
-df =pd.read_csv("creditcard.csv")
-y= df['Class']
-X=df.drop('Class', axis=1)
+df =pd.read_json("data.json",  lines=True)
+X = df.iloc[:,:30]
 
 # user dat
 user_input={}
