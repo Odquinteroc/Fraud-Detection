@@ -1,4 +1,4 @@
-pandas 
-numpy
+pandas
+streamlit
 scikit-learn
 pickle
